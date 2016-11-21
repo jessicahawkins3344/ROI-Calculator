@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="js canvas rgba backgroundsize opacity cssgradients csstransitions" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Expected ROI of Inbound Marketing | SmarkLabs</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="width=device-width initial-scale=1.0" name="viewport">
+  <meta content="IE=9; IE=8; IE=7; IE=EDGE" http-equiv="X-UA-Compatible">
+  <meta property="og:description" content="">
+  <meta property="og:title" content="ROI Calculator">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="ROI Calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript">hsjQuery = window['jQuery']</script>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">   
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link href="./production.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./custom.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x--hidden hs--user" id="expected--roi--inbound--marketing" style="margin-top: 0px;">
+  <div class="bg-white" id="roi-calculator"><span class="headerSpacer" style="height:nullpx"></span>
+    <div class="grid tall--bottom palm-grande--top palm-short--bottom p-b">
+      <div class="grid__item hard--ends one--whole text--center">
+        <h2 class="hard--top p-b" style="margin-bottom: 5px;">
+          <span id="hs_cos_wrapper_roi_calculator_header" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><b>Corstrata ROI Calculator</b></span>
+        </h2>
+      </div>
+    </div>
+    <div class="grid hard--top">
+      <div class="grid__item eleven-twelfths portable-one-whole hard--ends p-b-0 m-b-0" id="roi-container">
+        <form id="calc-form" _lpchecked="1" style="padding: 0px 10px;" class="p-x-lg">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="Avg_Daily_Census">
+                  <span></span>
+                  <i class="fa fa-info" data-toggle="tooltip" title="What is your average monthly traffic? Hint: use Google Analytics or a similar service to find this information."></i>
+                  <span class="font--13 font--heading">
+                    Average Daily Census
+                  </span>
+                </label>
+                <div class="input-group">
+                    <input class="form-control border--1 border--light-grey background--light-off-white" id="Avg_Daily_Census"" placeholder="Census" required="" type="text">
+                  <span class="input-group-addon relative font--14 font--heading text--center valign--middle text-white bold background--lightest-grey normal--weight border--bottom--1 border--top--1 border--right--1 border--0 border--light-grey">$</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="Avg_Wound_Cost">
+                  <span></span>
+                  <i class="fa fa-info" data-toggle="tooltip" title="How many monthly leads do you currently generate through your website?"></i>
+                  <span class="font--13 font--heading">
+                    Average Monthly Wound Supply Cost
+                  </span>
+                </label>
+                <div class="input-group">
+                    <input class="form-control border--1 border--light-grey background--light-off-white" id="Avg_Wound_Cost" placeholder="Supply Cost" required="" type="text">
+                  <span class="input-group-addon relative font--14 font--heading text--center valign--middle text-white bold background--lightest-grey normal--weight border--bottom--1 border--top--1 border--right--1 border--0 border--light-grey">$</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="Avg_RN_Visits">
+                  <span></span>
+                  <i class="fa fa-info" data-toggle="tooltip" title="How many of your average monthly leads are qualified to enter your sales process?"></i>
+                  <span class="font--13 font--heading">
+                     Average RN Visits Per Episode Per Wound Patient
+                  </span>
+                </label>
+                <div class="input-group relative">
+                    <input class="form-control border--1 border--light-grey background--light-off-white number" id="Avg_RN_Visits" placeholder="Average RN Visits" required="" type="text">
+                      <span class="B5-child input-group-addon relative font--14 font--heading text--center valign--middle text-white bold background--lightest-grey normal--weight border--bottom--1 border--top--1 border--right--1 border--0 border--light-grey"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Avg_Annual_Salary">
+                  <span></span>
+                  <i class="fa fa-info" data-toggle="tooltip" title="What is your percentage of qualified leads who become customers?"></i>
+                  <span class="font--13 font--heading">
+                    Annual Average Home Care RN Salary
+                  </span>
+                </label>
+                <div class="input-group">
+                    <input class="form-control border--1 border--light-grey background--light-off-white" id="Avg_Annual_Salary"" placeholder="i.e. 78000" required="" type="text">
+                      <span class="B6-child input-group-addon relative font--14 font--heading text--center valign--middle text-white bold background--lightest-grey normal--weight border--bottom--1 border--top--1 border--right--1 border--0 border--light-grey">$</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8" style="margin-top: 15px;">
+             <div class="row">
+                <div class="col-md-4">
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold text-white line-height--small">
+                        $<span id="cost_per_visit">0.00</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading light text-white">
+                          Your Direct <strong>Cost Per Visit</strong> (Labor + Mileage)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold c-white text-white bold line-height--small"><span id="Baseline_Visits" class="text-white">0</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading text-white">
+                          Your <strong>Annual</strong> Baseline Wound Care <strong>Visits</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold text-white line-height--small">
+                          <span id="Reduct_Visits">0</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading text-white">
+                          <strong>Annual Reduction</strong> in Wound Care <strong>Visits</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold text-white line-height--small">
+                          <span>$ </span><span id="Annual_Corstrata">0.00</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading light text-white">
+                          Annual <strong><br>Corstrata</strong> <br>Estimated Cost
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold text-white line-height--small">
+                          $
+                          <span id="Annual_Supply">0.00</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading light text-white">
+                          <strong>Annual <br>Supply Cost <br>Savings</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-success">
+                    <div class="card-block text-xs-center">
+                      <div class="value">
+                        <div class="font--30 font--heading bold text-white line-height--small">
+                          $<span id="Annual_Cost_Savings">0.00</span>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <span class="font--16 font--heading light text-white">
+                          <strong>Annual</strong> Cost <strong>Savings</strong> in Wound <strong>Visits</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="p-a">
+        <div class="p-t-0 p-b grid__item one-whole short padding--short-half" id="impact">
+          <div class="grid__item p-b-0 one-third portable-one-whole short p-t-0 padding--short-half--sides all--text--center metric">
+            <div class="grid__item one-whole hard--ends">
+              <div class="value">
+                <div class="font--48 font--heading bold">
+                  <span id="A10" class='text-primary'>+ $0.00</span>
+                </div>
+              </div>
+              <div class="title font--15 font--heading light all--text-white bold">
+                Total Annual Savings
+              </div>
+            </div>
+          </div>
+          <div class="grid__item p-b-0 one-third portable-one-whole short p-t-0 padding--short-half--sides all--text--center metric">
+            <div class="grid__item one-whole hard--ends">
+              <div class="value">
+                <div class="font--48 font--heading bold">
+                  <span id="D10" class="text-primary">+ $0.00</span>
+                </div>
+              </div>
+              <div class="title font--15 font--heading light all--text-white bold">
+                Total Annual Net Savings
+              </div>
+            </div>
+          </div>
+          <div class="grid__item p-b-0 one-third portable-one-whole short p-t-0 p-b padding--short-half--sides all--text--center metric">
+            <div class="grid__item one-whole hard--ends">
+              <div class="value">
+                <div class="font--48 font--heading bold">
+                  <span id="B13" class="text-primary">+ %0.00</span>
+                </div>
+              </div>
+              <div class="title title font--15 font--heading light all--text-white bold">
+                Return On Investment
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class='p-a-0 m-b-lg bg-white'>
+        <div class="row p-t">
+          <div class="p-b-0 col-md-6">
+            <h3 class="text-xs-right sub" style="color:rgb(237, 131, 34);">
+              Impact on your bottom line
+            </h3>
+          </div>
+          <div class="col-md-6 text-xs-left">
+            <a class="btn btn--large btn-warning-outline m-b-0 text-xs-left" id="lightboxtrigger">
+              Download My Results
+            </a>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+             
+        	$('#lightboxtrigger').click(function () {
+        		var formValidate = true;
+        		$("#calc-form").find('input').each(function () {
+        			if ($(this).val().length <= 0) {
+        				formValidate = false;
+        			}
+        		});
+        
+        		if (formValidate == true) {
+        			roiCalcForm("90bf9040-82d5-482e-9614-c7edf2c34bd9","");
+        		}
+        		else {
+        			alert('Please complete all fields.');
+        			return false;
+        		}
+        	});
+        	
+        });
+      </script>
+      </div>
+      </div>
+      <div class="grid hard" id="roiCalcForm">
+        <div id="roiCalcVcenter"></div>
+        <div id="roiCalcFormInner"></div>
+        <div id="roiCalcFormUnderlay"></div>
+      </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      <script src="./jquery.number.js"></script>
+      <script src="./roi_calculator.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+      <script>
+        function roiCalcForm(roiCalcTrigger,roiCalcFormHtml) {
+        	if (roiCalcTrigger == "close") {
+        		$('html').removeClass('roiCalcForm');
+        	} else {
+        		download.forms.create({
+
+        			formId: roiCalcTrigger,
+        			target: '#roiCalcFormInner',
+        			onFormReady: function(){
+        					$('#roiCalcFormInner').prepend("<div class='close' onclick=\"roiCalcForm('close',null);\"><i class='fa fa-times'></i></div><h3>Download a PDF of your results by filling out the form below!</h3>").addClass("p-t-lg all--btn all--btn--green-to-transparent border-radius--4");
+        
+        				$('#roiCalcFormInner form').after("<div class='thank-you font--20 font--heading text-white bold' style='visibility: hidden; opacity: 0; transition: visibility 0s, opacity 2s linear;'>Thanks! Here’s your ROI report!</div>");
+        
+        				$('#roiCalcForm').hubui();
+        
+        				$("#roiCalcForm").find('form .hs_submit input').click(function (e) {
+        					e.preventDefault();
+        
+        					var output = generatePDF(false);
+        					$('#pdf').val(output);
+        					generatePDF(true);
+        
+        					$(this).closest('form').submit();
+        
+        					$('#roiCalcFormInner form').fadeOut('slow');
+        					$('#roiCalcFormInner .thank-you').css({
+        						'visibility':'visible',
+        						'opacity':'1'
+        					});
+        				});
+        
+        				$('html').addClass('roiCalcForm');
+        			}
+        		});
+        	}
+        }
+      </script>
+    </div>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
